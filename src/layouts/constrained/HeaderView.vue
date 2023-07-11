@@ -12,6 +12,14 @@
       <v-responsive max-width="260">
         <v-text-field density="compact" hide-details variant="solo"></v-text-field>
       </v-responsive>
+      
+      <v-btn justify="center" size="small" append-icon="mdi-account-circle" href="/logout">
+        Logout
+        <template v-slot:append>
+        <v-icon color="warning"></v-icon>
+        </template>
+      </v-btn>
+
     </v-container>
   </v-app-bar>
 </template>

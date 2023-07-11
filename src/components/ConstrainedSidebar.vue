@@ -10,9 +10,9 @@
 
         <v-divider class="my-2"></v-divider>
 
-        <v-list-item link color="grey-lighten-4" href="/logout">
+        <v-list-item link color="grey-lighten-4" href="?">
           <v-list-item-title>
-            Sign Out
+            Refresh
           </v-list-item-title>
         </v-list-item>
       </v-list>
