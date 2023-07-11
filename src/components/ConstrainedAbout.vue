@@ -2,28 +2,12 @@
   <v-main class="bg-grey-lighten-3">
     <v-container>
       <v-row>
-        <v-col cols="2">
-          <v-sheet rounded="lg">
-            <v-list rounded="lg">
-              <v-list-item v-for="n in count" :key="n" link>
-                <v-list-item-title>
-                  List Item {{ n }}
-                </v-list-item-title>
-              </v-list-item>
-
-              <v-divider class="my-2"></v-divider>
-
-              <v-list-item link color="grey-lighten-4">
-                <v-list-item-title>
-                  Sign Out
-                </v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-sheet>
-        </v-col>
+        <ConstrainedSidebar :count="count" />
         <v-col>
           <v-sheet min-height="70vh" rounded="lg">
-            About
+            <div class="text-h2 pa-md-4 mx-lg-auto">
+              About
+            </div>
           </v-sheet>
         </v-col>
       </v-row>
@@ -32,6 +16,8 @@
 </template>
   
 <script setup>
+import ConstrainedSidebar from './ConstrainedSidebar.vue';
+
 defineProps({
   count: {
     type: Number,
