@@ -11,7 +11,7 @@ import router from '../router'
 import axios from 'axios'
 
 // Config axios
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = import.meta.env.VITE_FASTAPI_URL
 
 export function registerPlugins(app) {
   loadFonts()
