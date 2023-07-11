@@ -42,16 +42,15 @@ export default {
 
             try {
                 this.axios
-                    .get("/v1/board/1", JSON.stringify(saveData), {
+                    .post("/v1/account/login", JSON.stringify(saveData), {
                         headers: {
                             "Content-Type": `application/json`,
                         },
                     })
                     .then((res) => {
                         if (res.status === 200) {
-                            userStore.commit("login", {
-                                "username": "John Doe",
-                            });
+                            userStore.commit("login", res.data);
+                            alert('Login Succeeded')
                             router.push("/");
                         }
                     });
