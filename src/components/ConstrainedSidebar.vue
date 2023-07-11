@@ -10,7 +10,7 @@
 
         <v-divider class="my-2"></v-divider>
 
-        <v-list-item link color="grey-lighten-4">
+        <v-list-item link color="grey-lighten-4" href="/logout">
           <v-list-item-title>
             Sign Out
           </v-list-item-title>
