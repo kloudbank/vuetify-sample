@@ -1,4 +1,6 @@
-# base
+# Base
+
+[![Container build and publish](https://github.com/kloudbank/vuetify-sample/actions/workflows/ci.yml/badge.svg)](https://github.com/kloudbank/vuetify-sample/actions/workflows/ci.yml)
 
 ## Project setup
 
